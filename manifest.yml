@@ -1,0 +1,7 @@
+---
+applications:
+- name: embed-pg-test
+  path: build/libs/gs-actuator-service-0.1.0.jar
+  env:
+    SOME_ENV_VAR: some-example-value
+
