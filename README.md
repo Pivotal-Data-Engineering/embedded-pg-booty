@@ -27,4 +27,23 @@ Hopefully, we'll think of something even more clever to use this for.
 * [Spring Actuator Service Example](https://spring.io/guides/gs/actuator-service/)
 * [Embedded PostgreSQL](https://github.com/yandex-qatools/postgresql-embedded)
 
+## TODO
+* It looks like most of the downloaded archive is pgAdmin, so it would be good to remove that:
+```
+pgsql$ du -sh *
+9.5M	bin
+19M	doc
+9.2M	include
+19M	lib
+281M	pgAdmin 4
+7.1M	share
+8.7M	stackbuilder
+```
+* Here's where the download site is defined in the current code:
+```
+public PostgresDownloadConfigBuilder defaultsForCommand(Command command) {
+        fileNaming().setDefault(new UUIDTempNaming());
+        // I've found the only open and easy to use cross platform binaries
+        downloadPath().setDefault(new DownloadPath("http://get.enterprisedb.com/postgresql/"));
+```
 
