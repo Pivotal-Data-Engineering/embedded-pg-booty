@@ -1,4 +1,4 @@
-# A simple example to illustrate using an embedded PostgreSQL with a Spring Boot REST app
+<h1> VMware has ended active development of this project, this repository will no longer be updated.</h1><br># A simple example to illustrate using an embedded PostgreSQL with a Spring Boot REST app
 
 ## How to build and deploy to Cloud Foundry
 * `./gradlew clean build`
